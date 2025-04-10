@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn about NASA's PACE satellite, its mission, and the data it collects about Earth's oceans and atmosphere.">
+    <title>PACE Satellite Mission</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        header {
+            height: 450px;
+            background-image: url("wallpaperflare.com_wallpaper.jpg");
+            background-repeat: no-repeat;
+            background-size: max(1200px, 100vw);
+            background-position: center center;
+            object-fit: fill;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+        }
+
+        h1:hover {
+            transform: scale(1.1);
+            /* Pop-up effect */
+            opacity: 1.1;
+            /* Change opacity */
+        }
+
+        header>:nth-child(1) {
+            font-size: 50px;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo>:nth-child(1) {
+            max-height: 200px;
+            max-width: 200px;
+        }
+
+        .log {
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+            display: flex;
+        }
+
+        .log:hover {
+            transform: scale(1.1);
+            /* Pop-up effect */
+            opacity: 1.1;
+            /* Change opacity */
+        }
+
+        .moto {
+            font-size: 40px;
+            margin-top: 30px;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+        }
+
+        .moto:hover {
+            transform: scale(1.1);
+            /* Pop-up effect */
+            opacity: 1.1;
+            /* Change opacity */
+        }
+
+        nav {
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            width: fit-content;
+            padding: 5px 8px;
+            background-color: rgb(0, 0, 120);
+            border-radius: 5px;
+            color: white;
+            /* font-size: 20px; */
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+            opacity: 1.1;
+        }
+
+        section {
+            height: 200px;
+        }
+
+        .abbtn {
+            width: fit-content;
+            padding: 10px 15px;
+            background-color: blue;
+            border-radius: 10px;
+            color: white;
+            font-size: 20px;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+        }
+
+        .abbtn>:nth-child(1) {
+            text-decoration: none;
+            color: white;
+        }
+
+        .abbtn:hover {
+            transform: scale(1.1);
+            /* Pop-up effect */
+            opacity: 1.1;
+        }
+
+        .mission {
+            color: white;
+            padding: 30px;
+            background: radial-gradient(circle at center, rgb(79, 27, 113) 0, rgb(11, 0, 91), rgb(0, 0, 0) 100%);
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid black;
+        }
+
+        .aboutpace {
+            padding: 30px 150px;
+            font-size: 20px;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+        }
+
+        .aboutpace:hover {
+            transform: scale(1.1);
+            /* Pop-up effect */
+            opacity: 1.1;
+        }
+
+        .data {
+            color: white;
+            padding: 30px;
+            background: radial-gradient(circle at center, rgb(79, 27, 113) 0, rgb(11, 0, 91), rgb(0, 0, 0) 100%);
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid black;
+        }
+
+        .databody {
+            padding: 30px 150px;
+            font-size: 20px;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+        }
+
+        .databody:hover {
+            transform: scale(1.1);
+            /* Pop-up effect */
+            opacity: 1.1;
+        }
+
+        /* Global changes for smaller screens */
+        @media (max-width: 768px) {
+
+            /* Adjust header height and image size */
+            header {
+                height: 300px;
+                background-size: cover;
+                padding: 10px;
+            }
+
+            /* Adjust title font size */
+            header>:nth-child(1) {
+                font-size: 32px;
+            }
+
+            /* Logo size adjustment */
+            .logo>.log>img {
+                max-width: 100px;
+                max-height: 100px;
+            }
+
+            /* Moto font size reduction */
+            .moto {
+                font-size: 20px;
+            }
+
+            /* Reduce navigation padding and link size */
+            nav {
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            nav a {
+                margin: 5px;
+                padding: 5px;
+                font-size: 14px;
+            }
+
+            /* Adjust the mission section */
+            .mission,
+            .data {
+                padding: 20px;
+            }
+
+            .aboutpace,
+            .databody {
+                padding: 15px;
+                font-size: 16px;
+            }
+
+            .abbtn {
+                padding: 8px 12px;
+                font-size: 16px;
+            }
+
+            /* Footer adjustments */
+            footer {
+                padding: 8px;
+            }
+        }
+
+
+        footer {
+            color: white;
+            text-align: center;
+            padding: 10px;
+            background: radial-gradient(circle at center, rgb(79, 27, 113) 0, rgb(11, 0, 91), rgb(0, 0, 0) 100%);
+            border: 5px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1><b>TECH GRADES PACE</b></h1>
+        <div class="logo">
+            <div class="log">
+                <img src="logo-removebg-preview.png" alt="PACE Logo">
+            </div>
+        </div>
+        <div class="moto">Exploring Earth's Oceans and Atmosphere</div>
+    </header>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <a href="contactinfo.html">REGISTER</a>
+        <a href="feedback.html">FEEDBACK</a>
+    </nav>
+
+    <section class="mission">
+        <div class="aboutpace">
+            The PACE satellite is designed to significantly advance our understanding of Earth’s oceanic and atmospheric
+            systems through detailed observations of marine ecosystems, aerosols, and clouds.
+        </div>
+        <div class="abbtn">
+            <a href="aboutpace.html">About PACE</a>
+        </div>
+    </section>
+
+    <section class="data">
+        <div class="databody">
+            Here is our most simplified data provided for high school students. Explore our website to learn more about
+            PACE Satellite.
+        </div>
+        <div class="abbtn">
+            <a href="educationalmaterial.html">Educational Material</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 NASA PACE Mission | <a href="https://pace.nasa.gov" target="_blank">Learn More</a></p>
+    </footer>
+
+</body>
+
+</html>

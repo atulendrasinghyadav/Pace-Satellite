@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PACE Satellite Assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            background: radial-gradient(circle at center, rgb(79, 27, 113) 0, rgb(11, 0, 91), rgb(0, 0, 0) 100%);
+            border: 5px solid black;
+        }
+
+        header {
+            /* background-color: #3498db; */
+            height: 200px;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            padding-top: 100px;
+            background-image: url("wallpaperflare.com_wallpaper.jpg");
+            background-repeat: no-repeat;
+            background-size: max(1200px, 100vw);
+            background-position: center center;
+            object-fit: fill;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 60px;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+        }
+
+        h1:hover {
+            transform: scale(1.1);
+            /* Pop-up effect */
+            opacity: 1.1;
+            /* Change opacity */
+        }
+
+        nav {
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            width: fit-content;
+            padding: 5px 8px;
+            background-color: rgb(0, 0, 120);
+            border-radius: 5px;
+            color: white;
+            /* font-size: 20px; */
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+            align-items: center;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+            opacity: 1.1;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #a8d0eb;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 15px;
+            color: whitesmoke;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                height: 150px;
+                padding-top: 50px;
+            }
+
+            header h1 {
+                font-size: 45px;
+            }
+
+            nav {
+                padding: 15px;
+            }
+
+            nav a {
+                margin: 10px 5px;
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+
+            .container {
+                max-width: 90%;
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            ul li {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                height: 120px;
+                padding-top: 30px;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                margin: 5px 3px;
+                padding: 6px 8px;
+                font-size: 12px;
+            }
+
+            .container {
+                max-width: 95%;
+                padding: 10px;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            ul li {
+                font-size: 0.9em;
+            }
+        }
+
+        .section-title {
+            color: #333;
+            font-size: 1.2em;
+            margin-top: 20px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Tech Grades PACE Satellite Assignment</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <a href="contactinfo.html">REGISTER</a>
+        <a href="feedback.html">FEEDBACK</a>
+    </nav>
+
+    <div class="container">
+
+        <h2>General Mission</h2>
+        <ul>
+            <li>What is the primary purpose of the PACE satellite mission?</li>
+            <li>When was the PACE satellite launched, and which rocket was used?</li>
+            <li>What are the main sectors expected to benefit from PACE’s data?</li>
+        </ul>
+
+        <h2>Ocean Monitoring</h2>
+        <ul>
+            <li>How does PACE contribute to monitoring ocean color, and why is this important?</li>
+            <li>What role does PACE play in detecting harmful algal blooms (HABs)?</li>
+            <li>In what ways does PACE help track sediment transport and pollution in the ocean?</li>
+            <li>How does the PACE satellite aid in the assessment of coral reef and seagrass habitats?</li>
+        </ul>
+
+        <h2>Climate Change and Carbon Cycle</h2>
+        <ul>
+            <li>What role does PACE play in understanding the ocean’s contribution to the global carbon cycle?</li>
+            <li>How does PACE assist in generating carbon sequestration data?</li>
+            <li>Why is it important to track the ocean’s absorption of heat and carbon, and how does PACE contribute to
+                this effort?</li>
+        </ul>
+
+        <h2>Plankton Studies</h2>
+        <ul>
+            <li>What are phytoplankton, and why are they significant to both ocean ecosystems and the carbon cycle?</li>
+            <li>How does PACE differentiate between different types of phytoplankton?</li>
+            <li>What role does PACE play in tracking the impacts of climate change on plankton distribution?</li>
+        </ul>
+
+        <h2>Cloud and Aerosol Research</h2>
+        <ul>
+            <li>How do aerosols influence cloud formation, and what is PACE’s role in studying these interactions?</li>
+            <li>What information does the PACE satellite provide regarding cloud optical thickness and cloud particle
+                composition?</li>
+            <li>How does PACE improve our understanding of cloud-radiative forcing and its impact on climate?</li>
+        </ul>
+
+        <h2>Instruments on PACE</h2>
+        <ul>
+            <li>What is the function of the Ocean Color Instrument (OCI) on the PACE satellite?</li>
+            <li>How does the Multi-Angle Polarimeter (MAP) contribute to cloud and aerosol research?</li>
+            <li>What is the purpose of the Hyper-Angular Rainbow Polarimeter (HARP2), and how does it enhance cloud
+                studies?</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library - PACE Satellite</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: radial-gradient(circle at center, rgb(79, 27, 113) 0, rgb(11, 0, 91), rgb(0, 0, 0) 100%);
+            border: 5px solid black;
+        }
+
+        header {
+            /* background-color: #3498db; */
+            height: 200px;
+            background-image: url("wallpaperflare.com_wallpaper.jpg");
+            background-repeat: no-repeat;
+            background-size: max(1200px, 100vw);
+            background-position: center center;
+            object-fit: fill;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            padding-top: 100px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 65px;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+        }
+
+        h1:hover {
+            transform: scale(1.1);
+            /* Pop-up effect */
+            opacity: 1.1;
+            /* Change opacity */
+        }
+
+        nav {
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            width: fit-content;
+            padding: 5px 8px;
+            background-color: rgb(0, 0, 120);
+            border-radius: 5px;
+            color: white;
+            /* font-size: 20px; */
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+            align-items: center;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+            opacity: 1.1;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 20px auto;
+            /* background: #fff; */
+            padding: 30px;
+            border-radius: 10px;
+            /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); */
+        }
+
+        h2 {
+            color: #a8d0eb;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+        }
+
+        h2:hover {
+            transform: scale(1.1);
+            /* Pop-up effect */
+            opacity: 1.1;
+            /* Change opacity */
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: whitesmoke;
+        }
+
+        h3 {
+            color: #a8d0eb;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+        }
+
+        h3:hover {
+            transform: scale(1.1);
+            /* Pop-up effect */
+            opacity: 1.1;
+            /* Change opacity */
+        }
+
+        ul {
+            margin-bottom: 20px;
+            color: whitesmoke;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                height: 150px;
+                padding-top: 50px;
+            }
+
+            header h1 {
+                font-size: 36px;
+            }
+
+            nav {
+                padding: 10px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 14px;
+                padding: 4px 6px;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            h2,
+            h3 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            ul {
+                padding-left: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                height: 120px;
+                padding-top: 40px;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            /* nav a {
+                display: block;
+                margin: 10px 0;
+            } */
+
+            section {
+                padding: 10px;
+            }
+
+            h2,
+            h3 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            ul {
+                padding-left: 15px;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            /* background-color: #2c3e50; */
+            color: #e31313;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Library for the PACE Satellite</h1>
+    </header>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <a href="contactinfo.html">REGISTER</a>
+        <a href="feedback.html">FEEDBACK</a>
+    </nav>
+
+    <section>
+        <h2>PACE Satellite</h2>
+        <p>Plankton, Aerosol, Cloud, ocean Ecosystem (PACE) is a 2020s NASA Earth-observing satellite mission is
+            observing global ocean color, biogeochemistry, and ecology, as well as the carbon cycle, aerosols and
+            clouds. PACE is intended to be used to identify the extent and duration of phytoplankton blooms and improve
+            understanding of air quality. These and other uses of PACE data are expected to benefit the economy and
+            society according to NASA, especially sectors that rely on water quality, fisheries and food security.</p>
+
+        <p>After being proposed for cancellation under President Trump's FY 2018 budget, the program was restored by
+            Congress in 2018. The PACE project is managed by NASA Goddard Space Flight Center. The main instrument and
+            bus were designed and built at Goddard Space Flight Center.</p>
+        <p>
+            On 4 February 2020, NASA announced the selection of SpaceX to launch PACE on a Falcon 9, at a total cost to
+            NASA of US$80.4 million, including the launch service and other mission-related costs. The total cost of the
+            mission is $964 million, which includes spacecraft construction, launch, and operations. PACE successfully
+            launched on 8 February 2024 at 06:33 UTC. On 17 April 2024 it was announced that first operational data was
+            received.
+        </p>
+
+        <h3>
+            Key Facts of the Plankton, Aerosol, Cloud, ocean Ecosystem (PACE) satellite:
+        </h3>
+        <ul>
+            <li>Names -> Pre-Aerosol, Cloud, and ocean Ecosystem</li>
+            <li>Mission type -> Remote sensing</li>
+            <li>Operator -> NASA / GSFC</li>
+            <li>COSPAR ID -> 2024-025A</li>
+            <li>SATCAT no. -> 58928</li>
+            <li>Website -> pace.oceansciences.org/home.htm</li>
+            <li>Mission duration Planned -> 3–10 years</li>
+            <li>Elapsed -> 7 months, 6 days</li>
+        </ul>
+
+        <h3>Spacecraft Properties</h3>
+        <ul>
+            <li>Manufacturer -> Goddard Space Flight Center</li>
+            <li>Launch mass -> 1,694 kg (3,735 lb)</li>
+            <li>Dimensions -> 1.5 m × 1.5 m × 3.2 m (4 ft 11 in × 4 ft 11 in × 10 ft 6 in)</li>
+            <li>Power -> 1000 watts</li>
+        </ul>
+
+        <h3>Start of Mission</h3>
+        <ul>
+            <li>Launch date -> 8 February 2024, 06:33 UTC</li>
+            <li>Rocket -> Falcon 9 Block 5 (B1081.4)</li>
+            <li>Launch site -> Cape Canaveral, SLC‑40</li>
+            <li>Contractor -> SpaceX</li>
+        </ul>
+
+        <h3>Orbital Parameters</h3>
+        <ul>
+            <li>Reference system -> Geocentric orbit</li>
+            <li>Regime -> Sun-synchronous orbit</li>
+            <li>Altitude -> 676.5 km (420.4 mi)</li>
+            <li>Inclination -> 98°</li>
+            <li>Period -> 2-day global coverage 60° instrument view angle</li>
+        </ul>
+
+        <h2>Oceans</h2>
+        <h3>Oceans Color and Water Quality</h3>
+        <p>Advanced Ocean Color Detection: Ocean color is a critical parameter for understanding water quality, marine
+            habitats, and biological productivity. PACE offers unprecedented hyperspectral measurements that span the
+            ultraviolet (UV) to near-infrared (NIR) spectrum. These sensors detect subtle changes in the color of the
+            ocean surface, which can indicate biological or chemical processes happening within.</p>
+
+        <h3>Reports Generated</h3>
+        <p>Harmful Algal Bloom (HAB) Detection: PACE identifies and tracks the development of HABs, which can cause fish
+            die-offs, contaminate seafood, and negatively impact human health. These blooms are often detected through
+            changes in water color caused by specific phytoplankton species.
+        </p>
+        <p>
+            Sediment Transport and Pollution Tracking: The satellite monitors sediment plumes from rivers and coastal
+            runoff, allowing for real-time assessments of water quality, especially after storms or floods.
+        </p>
+        <p>
+            Coral Reef and Seagrass Habitat Mapping: By observing shallow coastal waters, PACE provides data on coral
+            reef health and the state of underwater vegetation, such as seagrass, which are key to coastal ecosystems.
+        </p>
+
+        <h3>Significance</h3>
+        <p>Timely detection of water quality issues and harmful blooms is essential for protecting marine ecosystems,
+            public health, and coastal economies reliant on fisheries and tourism.
+        </p>
+
+        <h3>Climate Change and Ocean-Atmosphere Interaction</h3>
+        <p>Carbon Cycle and Climate Regulation: The ocean is a major carbon sink, absorbing roughly 25% of
+            human-produced CO₂. Phytoplankton in the ocean absorb CO₂ during photosynthesis, and when they die, they can
+            transport carbon to the deep ocean, sequestering it for centuries. PACE provides the detailed information
+            necessary to understand these processes on a global scale.
+        </p>
+        <h3>Report Generated</h3>
+        <p>
+            Carbon Sequestration Data: Using ocean color data, PACE can estimate how much carbon is being absorbed by
+            the ocean, and how much is being sequestered through the "biological pump" — the process by which organic
+            material sinks to the deep ocean.</p>
+        <p>
+            Global Carbon Flux Reports: These are detailed analyses of how oceanic carbon cycling interacts with
+            atmospheric CO₂ levels, helping refine climate models.
+        </p>
+        <p>
+            Ocean Heat and Carbon Absorption Maps: PACE helps scientists track how much heat and carbon the ocean is
+            absorbing, a critical component of understanding global climate dynamics and predicting future climate
+            changes.
+        </p>
+
+        <h3>Significance</h3>
+        <p>As the Earth warms, changes in the ocean’s ability to absorb CO₂ and heat will have profound implications for
+            climate regulation. PACE’s data will help predict how these processes might evolve, guiding global climate
+            policy.
+        </p>
+
+        <h2>Planktons</h2>
+        <p>Plankton are tiny organisms that play an essential role in ocean ecosystems and the global carbon cycle.
+            These microscopic organisms, which include both phytoplankton (plant-like organisms) and zooplankton (tiny
+            animal-like organisms), form the foundation of the marine food web. Their health and abundance are critical
+            indicators of oceanic and atmospheric changes.</p>
+
+        <h3>Types of Planktons</h3>
+        <ul>
+            <li>Phytoplanktons</li>
+            <p>
+                Phytoplankton are microscopic, photosynthetic organisms (much like plants) that live in the upper layers
+                of the ocean.
+            </p>
+            <p>
+                They produce around 50% of the Earth's oxygen, making them crucial for maintaining atmospheric oxygen
+                levels.
+            </p>
+            <p>
+                Phytoplankton absorb carbon dioxide during photosynthesis, thus playing a significant role in the carbon
+                cycle and mitigating the impact of climate change.
+            </p>
+            <li>Zooplankton</li>
+            <p>
+                Zooplankton are tiny animals that feed on phytoplankton and other small particles in the ocean.
+            </p>
+            <p>
+                They are crucial in transferring energy up the food chain, being a primary food source for larger marine
+                animals, including fish and whales.
+            </p>
+        </ul>
+        <h3>How PACE Satellite Provides Information on Plankton</h3>
+        <p>
+            The PACE mission is equipped with an advanced Ocean Color Instrument (OCI), designed to monitor ocean color
+            across a wide spectrum of wavelengths. This allows scientists to study both the concentration and
+            composition of plankton. Here’s how PACE contributes to understanding plankton:
+        </p>
+        <ul>
+            <li>Phytoplankton Biomass Monitoring</li>
+            <p>
+                By analyzing the color of the ocean, PACE can determine the concentration of chlorophyll a pigment found
+                in phytoplankton. Chlorophyll concentrations serve as an indicator of phytoplankton biomass and the
+                overall health of marine ecosystems.
+            </p>
+            <li>Phytoplankton Diversity and Composition</li>
+            <p>
+                PACE’s hyperspectral imaging capability goes beyond basic chlorophyll detection. It can differentiate
+                between different types of phytoplankton based on their spectral signatures.
+            </p>
+            <li>Tracking Climate Change Impacts</li>
+            <p>
+                PACE’s long-term monitoring helps track how climate change is affecting phytoplankton distribution and
+                abundance. For example, warming waters can cause shifts in the types of phytoplankton that thrive in
+                certain areas, impacting the food web.
+            </p>
+            <li>Ocean Carbon Cycle</li>
+            <p>
+                Phytoplankton play a significant role in the biological carbon pump, a process where carbon is absorbed
+                from the atmosphere and stored in the ocean. PACE helps quantify how much carbon is being taken up by
+                phytoplankton during photosynthesis.
+            </p>
+            <li>Harmful Algal Blooms (HABs) Detection</li>
+            <p>
+                HAB reports provided by PACE allow local authorities and governments to track these blooms and take
+                preventative or protective actions to safeguard coastal ecosystems and human populations.
+            </p>
+        </ul>
+
+        <h2>Clouds</h2>
+        <p>
+            The PACE satellite is equipped with sophisticated instruments designed to provide high-quality, continuous
+            data on cloud properties, aerosol interactions, and radiative processes that are vital for understanding
+            climate dynamics.
+        </p>
+
+        <h3>Key Contributions of PACE to Cloud Studies</h3>
+        <p>
+            Cloud Optical and Microphysical Properties:
+        <ul>
+            <li>Cloud optical thickness (COT): Measures the degree to which clouds block sunlight.</li>
+            <li>Cloud particle size and composition: Helps determine if clouds are made of water droplets, ice crystals,
+                or mixed-phase particles.</li>
+            <li>Cloud reflectance: Affects how clouds reflect sunlight, which plays a role in Earth’s radiation budget.
+            </li>
+        </ul>
+        </p>
+
+        <p>Aerosol-Cloud Interactions
+        <ul>
+            <li>Aerosols (tiny particles in the atmosphere) influence cloud formation and behavior. They can act as
+                cloud condensation nuclei (CCN) or ice nucleating particles, helping to form cloud droplets or ice
+                crystals.</li>
+            <li>The interactions between aerosols and clouds are complex, impacting cloud lifetime, precipitation
+                patterns, and cloud albedo (brightness).</li>
+        </ul>
+        </p>
+
+        <p>
+        <p>Cloud-Radiative Forcing</p>
+        <ul>
+            <li>High, thin clouds may trap outgoing infrared radiation (warming effect).</li>
+            <li>Low, thick clouds tend to reflect more incoming sunlight (cooling effect).</li>
+        </ul>
+        </p>
+
+        <p>
+            Improving Weather and Climate Models
+        <ul>
+            <li>By providing better data on cloud-aerosol interactions, cloud formation, and their global distribution,
+                PACE helps to improve weather prediction and climate models.</li>
+            <li>PACE’s data are critical for accurately modeling cloud feedback mechanisms, which are among the most
+                uncertain aspects of climate science. These feedbacks are crucial to predicting future global warming
+                scenarios.</li>
+        </ul>
+        </p>
+
+        <h3>Instruments on PACE and Their Role in Cloud Monitoring</h3>
+        <p>
+            Ocean Color Instrument (OCI):
+        <ul>
+            <li>The OCI is PACE's primary sensor, designed to monitor ocean color, but it also measures cloud properties
+                across visible, ultraviolet, and near-infrared wavelengths.</li>
+            <li>It can differentiate between different types of clouds, assess their optical thickness, and provide data
+                on cloud cover across the globe.</li>
+        </ul>
+        </p>
+
+        <p>
+            Multi-Angle Polarimeter (MAP)
+        <ul>
+            <li>The MAP provides polarization data, which is critical for distinguishing between aerosols, cloud
+                droplets, and ice particles.</li>
+            <li>By capturing light at multiple angles, this instrument can provide detailed information on the
+                microphysical properties of clouds, such as droplet size, ice particle shape, and cloud phase (liquid or
+                ice).</li>
+        </ul>
+        </p>
+
+        <p>
+            Hyper-Angular Rainbow Polarimeter (HARP2)
+        <ul>
+            <li>This instrument is designed to capture cloud particle size distributions and determine whether clouds
+                contain water droplets, ice crystals, or a mixture.</li>
+            <li>HARP2 offers multi-angle views of clouds, which improve the accuracy of cloud measurements and provide
+                deeper insights into cloud-aerosol interactions.</li>
+        </ul>
+        </p>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 PACE Satellite Project - All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>

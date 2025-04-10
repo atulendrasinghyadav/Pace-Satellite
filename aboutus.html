@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Tech Grades PACE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            /* background-color: #f4f4f4; */
+            background: radial-gradient(circle at center, rgb(79, 27, 113) 0, rgb(11, 0, 91), rgb(0, 0, 0) 100%);
+            color: #333;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            /* background-color: #3498db; */
+            height: 80px;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            padding-top: 50px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+        }
+
+        h1:hover {
+            transform: scale(1.1);
+            /* Pop-up effect */
+            opacity: 1.1;
+            /* Change opacity */
+        }
+
+        nav {
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            width: fit-content;
+            padding: 5px 8px;
+            background-color: rgb(0, 0, 120);
+            border-radius: 5px;
+            color: white;
+            /* font-size: 20px; */
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+            align-items: center;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+            opacity: 1.1;
+        }
+
+        .section-title {
+            font-size: 2em;
+            color: #a8d0eb;
+            margin-top: 20px;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+        }
+
+        .section-title:hover {
+            transform: scale(1.1);
+            /* Pop-up effect */
+            opacity: 1.1;
+            /* Change opacity */
+        }
+
+        p {
+            margin: 15px 0;
+        }
+
+        .mission {
+            /* background-color: #fff; */
+            color: whitesmoke;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                margin: 0 5px;
+                padding: 5px;
+                font-size: 12px;
+            }
+
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+
+            .section-title {
+                font-size: 1.8em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 24px;
+            }
+
+            nav {
+                padding: 10px;
+            }
+
+            /* nav a {
+                display: block;
+                margin: 10px 0;
+                padding: 8px;
+                font-size: 12px;
+            } */
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+
+            .section-title {
+                font-size: 1.5em;
+            }
+
+            .mission {
+                padding: 15px;
+            }
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>About Tech Grades PACE</h1>
+    </header>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <a href="contactinfo.html">REGISTER</a>
+        <a href="feedback.html">FEEDBACK</a>
+    </nav>
+    <!-- Main Content Container -->
+    <div class="container">
+
+        <!-- Mission Section -->
+        <section class="mission">
+            <h2 class="section-title">Our Mission</h2>
+            <p>
+                Pace Satellite is dedicated to advancing satellite technology and innovation. Our mission is to provide
+                cutting-edge satellite communication services that foster global connectivity, scientific exploration,
+                and technological growth. Through research, development, and collaboration, we aim to revolutionize the
+                space industry while making significant contributions to educational, commercial, and public sectors.
+            </p>
+            <p>
+                We believe in the power of space to transform lives, connect the world, and inspire future generations.
+                Our commitment is to lead the way in providing reliable, secure, and sustainable satellite solutions.
+            </p>
+        </section>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Pace Satellite. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

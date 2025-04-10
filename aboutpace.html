@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - PACE Satellite</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: radial-gradient(circle at center, rgb(79, 27, 113) 0, rgb(11, 0, 91), rgb(0, 0, 0) 100%);
+            border: 5px solid black;
+        }
+
+        header {
+            /* background-color: #3498db; */
+            height: 200px;
+            background-image: url("wallpaperflare.com_wallpaper.jpg");
+            background-repeat: no-repeat;
+            background-size: max(1200px, 100vw);
+            background-position: center center;
+            object-fit: fill;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            padding-top: 100px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 75px;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+        }
+
+        h1:hover {
+            transform: scale(1.1);
+            /* Pop-up effect */
+            opacity: 1.1;
+            /* Change opacity */
+        }
+
+        nav {
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            width: fit-content;
+            padding: 5px 8px;
+            background-color: rgb(0, 0, 120);
+            border-radius: 5px;
+            color: white;
+            /* font-size: 20px; */
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+            align-items: center;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+            opacity: 1.1;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 20px auto;
+            /* background: #fff; */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #a8d0eb;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+        }
+
+        h2:hover {
+            transform: scale(1.1);
+            /* Pop-up effect */
+            opacity: 1.1;
+            /* Change opacity */
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: whitesmoke;
+        }
+
+        h3 {
+            color: #a8d0eb;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+        }
+
+        h3:hover {
+            transform: scale(1.1);
+            /* Pop-up effect */
+            opacity: 1.1;
+            /* Change opacity */
+        }
+
+        .mission-statement {
+            font-size: 1.1rem;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #018aac;
+            border-left: 5px solid #343fdb;
+            color: #222e35;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+        }
+
+        .mission-statement:hover {
+            transform: scale(1.1);
+            /* Pop-up effect */
+            opacity: 1.1;
+            /* Change opacity */
+        }
+
+        ul {
+            margin-bottom: 20px;
+            color: whitesmoke;
+        }
+
+        .team {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .team-member {
+            text-align: center;
+            flex-basis: 30%;
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .team-member h4 {
+            margin-top: 10px;
+            color: #2c3e50;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                height: 150px;
+                padding-top: 50px;
+            }
+
+            header h1 {
+                font-size: 40px;
+            }
+
+            nav a {
+                margin: 5px;
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            h2,
+            h3 {
+                font-size: 24px;
+            }
+
+            .mission-statement {
+                font-size: 1rem;
+                padding: 8px;
+            }
+
+            .team {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .team-member {
+                flex-basis: 100%;
+            }
+
+            .team-member img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                height: 120px;
+                padding-top: 30px;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                margin: 3px;
+                padding: 6px 8px;
+                font-size: 12px;
+            }
+
+            section {
+                padding: 10px;
+            }
+
+            h2,
+            h3 {
+                font-size: 20px;
+            }
+
+            .mission-statement {
+                font-size: 0.9rem;
+                padding: 6px;
+            }
+
+            .team-member img {
+                width: 60px;
+                height: 60px;
+            }
+
+            footer {
+                padding: 10px;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            /* background-color: #2c3e50; */
+            color: #e31313;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>About the PACE Satellite</h1>
+    </header>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <a href="contactinfo.html">REGISTER</a>
+        <a href="feedback.html">FEEDBACK</a>
+    </nav>
+
+    <section>
+        <h2>What is PACE Satellite?</h2>
+        <p>The PACE (Planetary Atmospheric Climate Explorer) Satellite is a groundbreaking mission designed to monitor
+            Earth's climate and atmospheric composition from space. Launched in 2024, PACE has been instrumental in
+            understanding how different factors affect global climate change and environmental patterns.</p>
+
+        <p>Equipped with the latest sensor technology, PACE collects detailed data on cloud cover, greenhouse gases,
+            ozone layers, and aerosols, helping scientists worldwide create predictive models to forecast weather
+            changes and global temperature shifts.</p>
+
+        <h3>
+            Key theoretical aspects of the Plankton, Aerosol, Cloud, ocean Ecosystem (PACE) satellite:
+        </h3>
+        <h3>
+            Mission Overview:
+        </h3>
+        <p>
+            Objective: The PACE satellite aims to enhance our understanding of Earth's ocean and atmosphere by providing
+            comprehensive data on marine ecosystems, atmospheric aerosols, and cloud properties.
+            Launch Date: Scheduled for launch in early 2024.
+            Primary Goals:
+        </p>
+        <p>
+            Ocean Ecosystem Monitoring: Study the health and dynamics of marine phytoplankton, which play a crucial role
+            in oceanic primary production and carbon cycling.
+            Aerosol and Cloud Studies: Examine atmospheric aerosols and cloud properties to understand their impacts on
+            climate, weather patterns, and air quality.
+            Data Integration: Provide a unified view of ocean and atmospheric conditions to support climate research and
+            environmental monitoring.
+        </p>
+        <p>
+            Instruments Onboard:
+
+            Ocean Color Instrument (OCI): Measures the color of the ocean to infer properties such as chlorophyll
+            concentration, phytoplankton distribution, and water quality.
+            Spectral Radiometer: Measures the intensity of light at different wavelengths to assess aerosol and cloud
+            properties.
+            Multi-Angle Polarimeter: Observes light scattered by aerosols and clouds from multiple angles to better
+            understand their composition and impact.
+        </p>
+        <h3>Key Scientific Contributions:</h3>
+        <p>
+            Phytoplankton Dynamics: Provides data on the spatial and temporal distribution of phytoplankton, including
+            harmful algal blooms.
+            Aerosol Composition: Offers insights into the types and concentrations of aerosols in the atmosphere and
+            their sources.
+            Cloud Characteristics: Measures cloud properties such as thickness, height, and optical depth, contributing
+            to climate models and weather forecasting.</p>
+
+        <h3>Applications and Impacts:</h3>
+
+        <p>Climate Research: Enhances understanding of the interactions between the ocean and atmosphere, contributing
+            to climate change models.
+            Environmental Monitoring: Supports tracking of water quality and pollution, including detection of harmful
+            algal blooms and other oceanic events.
+            Public Health: Provides data relevant to air quality and aerosol impacts on human health.</p>
+        <h3>Data Accessibility:</h3>
+
+        <p>Open Data Policy: All PACE data will be publicly accessible, supporting transparency and facilitating
+            research across the scientific community.
+            Visualization Tools: Data will be available through various platforms and visualization tools to aid in
+            interpretation and analysis.</p>
+        <h3>Collaboration and Partnerships:</h3>
+
+        <p>International Cooperation: Involves collaborations with international space agencies, research institutions,
+            and environmental organizations.</p>
+        <p>Research Integration: Data from PACE will be integrated with other satellite missions and ground-based
+            observations to provide a comprehensive view of Earth's systems.</p>
+        <h3>Educational and Outreach Efforts:</h3>
+
+        <p>Public Engagement: Includes efforts to make data accessible for educational purposes and to raise awareness
+            about ocean and atmospheric science.</p>
+        <p>Teaching Resources: Development of materials and tools to help educators integrate PACE data into classroom
+            learning and enhance ocean literacy.</p>
+        </p>
+
+        <div class="mission-statement">
+            Our mission: To explore the Earth's atmosphere, monitor environmental changes, and provide crucial data to
+            fight climate change.
+        </div>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li>High-resolution spectral sensors for climate monitoring.</li>
+            <li>Real-time data transmission to global ground stations.</li>
+            <li>Multi-year mission designed to capture long-term atmospheric changes.</li>
+            <li>Global collaboration with leading space agencies and environmental organizations.</li>
+        </ul>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 PACE Satellite Project - All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
